@@ -98,3 +98,50 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m10:09:21.389328 [debug] [MainThread]: Connection 'debug' was properly closed.
 [0m10:09:21.389521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ff12e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110ebfd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110ee6a00>]}
 [0m10:09:21.389735 [debug] [MainThread]: Flushing usage events
+[0m13:01:49.885943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027029C59130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027029C5B4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027029C5B4A0>]}
+
+
+============================== 13:01:49.890458 | 5c02a5d2-00d3-4ce0-a3cc-df9330290ac1 ==============================
+[0m13:01:49.890458 [info ] [MainThread]: Running with dbt=1.8.7
+[0m13:01:49.890458 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\PC AORUS FOX\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m13:01:49.905254 [info ] [MainThread]: dbt version: 1.8.7
+[0m13:01:49.906254 [info ] [MainThread]: python version: 3.12.4
+[0m13:01:49.906254 [info ] [MainThread]: python path: C:\Users\PC AORUS FOX\Documents\Code\dbt-tutorial\venv\Scripts\python.exe
+[0m13:01:49.907256 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m13:01:49.907256 [info ] [MainThread]: Using profiles dir at C:\Users\PC AORUS FOX\.dbt
+[0m13:01:49.907256 [info ] [MainThread]: Using profiles.yml file at C:\Users\PC AORUS FOX\.dbt\profiles.yml
+[0m13:01:49.908256 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\PC AORUS FOX\Documents\Code\dbt-tutorial\dbt_project.yml
+[0m13:01:49.908256 [info ] [MainThread]: Configuration:
+[0m13:01:49.908256 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m13:01:49.908256 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:01:49.909742 [info ] [MainThread]: Required dependencies:
+[0m13:01:49.909742 [debug] [MainThread]: Executing "git --help"
+[0m13:01:49.934405 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:01:49.935406 [debug] [MainThread]: STDERR: "b''"
+[0m13:01:49.935406 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:01:49.936406 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m13:01:49.936406 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m13:01:49.937407 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\PC AORUS FOX\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m13:01:49.938408 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\PC AORUS FOX\Documents\Code\dbt-tutorial\dbt_project.yml> not found
+
+[0m13:01:49.938912 [debug] [MainThread]: Command `dbt debug` failed at 13:01:49.938912 after 0.13 seconds
+[0m13:01:49.938912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002702997F920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027029297380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027029BFE240>]}
+[0m13:01:49.940297 [debug] [MainThread]: Flushing usage events
+[0m13:05:22.234767 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021515A82F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021515A83A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021515A83D40>]}
+
+
+============================== 13:05:22.238771 | 127a076b-d7b6-40cc-aabb-cb09e329c215 ==============================
+[0m13:05:22.238771 [info ] [MainThread]: Running with dbt=1.8.7
+[0m13:05:22.238771 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\PC AORUS FOX\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init jaffle_shop', 'send_anonymous_usage_stats': 'True'}
+[0m13:05:22.255366 [info ] [MainThread]: A project called jaffle_shop already exists here.
+[0m13:05:22.256367 [debug] [MainThread]: Command `dbt init` succeeded at 13:05:22.256367 after 0.10 seconds
+[0m13:05:22.256367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002151517BFB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021515A1D580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021515BA3CB0>]}
+[0m13:05:22.257368 [debug] [MainThread]: Flushing usage events
